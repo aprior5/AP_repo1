@@ -42,7 +42,6 @@ gss_cat_dem <- gss_cat %>%
            partyid != "Strong republican")
 
 
-gss_cat_rep <- gss_cat %>% 
-  filter(!partyid %in% c("Ind,near rep", "Not str democrate", "Strong democrate"))
+gss_cat_rep <- NULL
 
 ```
