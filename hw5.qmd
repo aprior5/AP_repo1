@@ -32,3 +32,13 @@ gss_cat %>%
   ggplot(aes(tvhours,partyid)) +
   geom_col()
 ```
+
+```{r}
+#| label: Making a change
+
+gss_cat_dem <- gss_cat %>% 
+  filter(partyid != "Ind,near rep"|
+           partyid != "Not str republican" |
+           partyid != "Strong republican")
+
+```
